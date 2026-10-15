@@ -1,0 +1,6 @@
+{
+  "name": "CASAFLOR — Luxury Floral Experience",
+  "description": "Floristería de alta gama en Avenida Espavé, Colón, Panamá. Arreglos florales de autor, rosas seleccionadas y colecciones botánicas exclusivas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme {
+  --color-warm-ivory: #F8F5EF;
+  --color-botanical: #263D32;
+  --color-botanical-dark: #1A2B23;
+  --color-sage: #A8B5A0;
+  --color-sage-light: #E7ECE4;
+  --color-dusty-rose: #D8B7B2;
+  --color-deep-burgundy: #632F3B;
+  --color-charcoal: #252521;
+  --color-charcoal-light: #4A4A45;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+:root {
+  --warm-ivory: #F8F5EF;
+  --botanical: #263D32;
+  --sage: #A8B5A0;
+  --dusty-rose: #D8B7B2;
+  --deep-burgundy: #632F3B;
+  --charcoal: #252521;
+}
+
+html {
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  background-color: #F8F5EF;
+  color: #252521;
+  overflow-x: hidden;
+}
+
+.font-editorial {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F5EF;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8B7B2;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A8B5A0;
+}
+
+/* Luxury button feel */
+.btn-luxury-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #263D32;
+  color: #F8F5EF;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.875rem 1.75rem;
+  transition: all 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-luxury-primary:hover {
+  background-color: #1A2B23;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(38, 61, 50, 0.18);
+}
+.btn-luxury-primary:active {
+  transform: scale(0.97);
+}
+
+.btn-luxury-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid #263D32;
+  color: #263D32;
+  background: transparent;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.875rem 1.75rem;
+  transition: all 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-luxury-secondary:hover {
+  background-color: #263D32;
+  color: #F8F5EF;
+  transform: translateY(-1px);
+}
+.btn-luxury-secondary:active {
+  transform: scale(0.97);
+}
